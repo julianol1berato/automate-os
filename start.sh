@@ -15,6 +15,7 @@ cat /etc/ssh/sshd_config | grep -v "PermitRootLogin" >
 cat /etc/ssh/sshd_config | grep -v "PasswordAuthentication" >
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+systemctl restart sshd
 
 # Change configure Vim
 echo "colorscheme elflord" > ~/.vimrc
