@@ -1,11 +1,10 @@
 #!/bin/bash
-
+# Create JulianoL1berato
+#
 yum update -y 
 yum upgrade -y
-yum vim unzip 
+yum install vim unzip -y
 
-
-
-# Mudar configuracoes VIM
-echo "colorscheme elflord" > ~/.vimrc2
-echo "syntax on" >> ~/.vimrc2
+# Change configure Vim
+echo "colorscheme elflord" > ~/.vimrc
+echo "syntax on" >> ~/.vimrc
