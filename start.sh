@@ -11,8 +11,8 @@ yum upgrade -y
 yum install vim unzip openssh-server -y
 
 ## change config sshd
-cat /etc/ssh/sshd_config | grep -v "PermitRootLogin" >
-cat /etc/ssh/sshd_config | grep -v "PasswordAuthentication" >
+cat /etc/ssh/sshd_config | grep -v "PermitRootLogin" > /etc/ssh/sshd_config
+cat /etc/ssh/sshd_config | grep -v "PasswordAuthentication" > /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 systemctl restart sshd
