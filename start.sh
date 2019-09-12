@@ -33,5 +33,3 @@ systemctl disable firewalld
 ## change configure vim
 echo "colorscheme elflord" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
-
-## teste! teste1123
