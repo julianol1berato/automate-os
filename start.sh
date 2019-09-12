@@ -18,17 +18,16 @@ echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 systemctl restart sshd
 
 ## flush rules
-iptables −F
-iptables −X
-iptables −Z
-iptables −t nat −F
+#/usr/sbin/iptables −F
+#/usr/sbin/iptables −X
+#/usr/sbin/iptables −Z
 ## initial rules
-iptables −P INPUT ACCEPT
-iptables −P OUTPUT ACCEPT
-iptables −P FORWARD ACCEPT
-iptables −t nat −P PREROUTING ACCEPT
-iptables −t nat −P POSTROUTING ACCEPT
-iptables −A INPUT −i lo −j ACCEPT
+#iptables −P INPUT ACCEPT
+#iptables −P OUTPUT ACCEPT
+#iptables −P FORWARD ACCEPT
+#iptables −A INPUT −i lo −j ACCEPT
+systemctl stop firewalld
+systemctl disable firewalld
 
 
 ## change configure vim
