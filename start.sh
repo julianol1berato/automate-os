@@ -30,8 +30,6 @@ systemctl stop firewalld
 systemctl disable firewalld
 
 
-#Teste Code1
-
 ## change configure vim
 echo "colorscheme elflord" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
