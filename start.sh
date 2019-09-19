@@ -7,8 +7,12 @@ sudo sed -i "s/enforcing/disabled/g" /etc/selinux/config
 ## updates
 yum update -y 
 yum upgrade -y
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y 
+
 ## Install Utilities
-yum install vim unzip openssh-server -y
+yum install vim unzip openssh-server wget -y
+#sysadmin? 
+#yum install bind-utils nmap 
 
 ## change config sshd
 cat /etc/ssh/sshd_config | grep -v "PermitRootLogin" > /etc/ssh/sshd_config
@@ -29,7 +33,8 @@ systemctl restart sshd
 systemctl stop firewalld
 systemctl disable firewalld
 
-
 ## change configure vim
 echo "colorscheme elflord" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
+
+
