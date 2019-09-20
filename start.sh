@@ -37,4 +37,24 @@ systemctl disable firewalld
 echo "colorscheme elflord" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
 
+echo "Você é meu criador? Deseja seus super poderes de zsh?"
+read PAIehvoce;
+if [ $PAIehvoce = godwar ];
+then
+    echo "Então toma!"
+    yum install git -y
+    cd /tmp
+    wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+    ./install.sh
+    git clone https://github.com/powerline/fonts.git --depth=1
+    cd fonts
+    ./install.sh
+    cd ..
+    rm -rf fonts
+    sudo sed -i "s/robbyrussell/agnoster/g" ~/.zshrc
+fi
+
+
+
+
 
