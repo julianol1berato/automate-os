@@ -7,10 +7,9 @@ sudo sed -i "s/enforcing/disabled/g" /etc/selinux/config
 ## updates
 yum update -y 
 yum upgrade -y
-yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y 
 
 ## Install Utilities
-yum install vim unzip openssh-server wget -y
+yum install vim unzip openssh-server wget telnet epel-release -y
 #sysadmin? 
 #yum install bind-utils nmap 
 
@@ -36,3 +35,5 @@ systemctl disable firewalld
 ## change configure vim
 echo "colorscheme elflord" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
+echo 'HISTTIMEFORMAT="%d/%m/%Y - %T =>"' >> ~/.bashrc
+
