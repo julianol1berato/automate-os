@@ -8,6 +8,7 @@ agent)
 install)
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 wget https://yum.puppet.com/puppet/puppet6-release-el-6.noarch.rpm
+rpm -i puppet6-release-el-6.noarch.rpm
 yum install puppet tzdata -y
 echo "[agent]
 certname = $(hostname)
