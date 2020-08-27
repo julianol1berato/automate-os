@@ -32,6 +32,9 @@ echo "export HISTCONTROL=ignoredups:erasedups" >> ~/.bashrc
 
 systemctl restart sshd
 
+timedatectl set-timezone America/Sao_Paulo
+
+
 ## flush rules
 /usr/sbin/iptables −F
 /usr/sbin/iptables −X
