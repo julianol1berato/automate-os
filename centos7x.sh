@@ -15,8 +15,7 @@ yum install vim unzip openssh-server wget telnet epel-release -y
 
 
 ## change config sshd
-cat /etc/ssh/sshd_config | grep -v "PermitRootLogin" > /etc/ssh/sshd_config
-cat /etc/ssh/sshd_config | grep -v "PasswordAuthentication" > /etc/ssh/sshd_config
+cp /etc/ssh/sshd_config{,.original}
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 echo 'HISTTIMEFORMAT="%d/%m/%Y - %T => "' >> ~/.bashrc
