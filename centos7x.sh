@@ -23,14 +23,14 @@ systemctl restart sshd
 timedatectl set-timezone America/Sao_Paulo
 
 ## flush rules
-/usr/sbin/iptables −F
-/usr/sbin/iptables −X
-/usr/sbin/iptables −Z
+/usr/sbin/iptables -F
+/usr/sbin/iptables -X
+/usr/sbin/iptables -Z
 ## initial rules
-/usr/sbin/iptables −P INPUT ACCEPT
-/usr/sbin/iptables −P OUTPUT ACCEPT
-/usr/sbin/iptables −P FORWARD ACCEPT
-/usr/sbin/iptables −A INPUT −i lo −j ACCEPT
+/usr/sbin/iptables -P INPUT ACCEPT
+/usr/sbin/iptables -P OUTPUT ACCEPT
+/usr/sbin/iptables -P FORWARD ACCEPT
+/usr/sbin/iptables -A INPUT −i lo −j ACCEPT
 systemctl stop firewalld
 systemctl disable firewalld
 
