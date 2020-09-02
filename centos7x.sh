@@ -30,7 +30,7 @@ timedatectl set-timezone America/Sao_Paulo
 /usr/sbin/iptables -P INPUT ACCEPT
 /usr/sbin/iptables -P OUTPUT ACCEPT
 /usr/sbin/iptables -P FORWARD ACCEPT
-/usr/sbin/iptables -A INPUT −i lo −j ACCEPT
+/usr/sbin/iptables -A INPUT -i lo -j ACCEPT
 systemctl stop firewalld
 systemctl disable firewalld
 
