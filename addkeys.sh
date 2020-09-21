@@ -1,0 +1,4 @@
+#Add Keys for Administration
+
+mkdir /root/.ssh
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEniPxIoupEIhR009i/LZqmp6IpBdoez9BBvt5BAAOZebAziOnN6h+kSsIy+iWyJ0n0+DuVn8D7CzgnQ9GJlqA2CofIzWTQwApkplzqkDMLuaNAC9DMetY+u3v2Bxs4hn5LSgDLjOEDgFse+M1GIpTHOXHVb+g3AnUfTeJ90qeIa0NmCrhdlyXlMY2SQ1i5nlNM51bc1hWVRRianrUZVTLrm7VhwzGEnPQN0doyqWdhxa4cYWJQEH8wWiMT4PTHxTBfUsGhqPFwDYGnBu3sKCdIUIDbvQHWxSmnaOHBFG6MCe7ELrJuN41RpDGfYfFZB1dmR+OijYS7X08zCt8sDCd"  >> $HOME/.ssh/authorized_keys
