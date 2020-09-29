@@ -6,7 +6,8 @@ setenforce 0
 sudo sed -i "s/enforcing/disabled/g" /etc/selinux/config
 yum update -y 
 yum upgrade -y
-yum install vim unzip openssh-server bind-utils wget telnet net-snmp-utils nmap epel-release -y
+yum install vim unzip openssh-server bind-utils wget telnet net-snmp net-snmp-utils nmap epel-release -y
+
 
 ## change config sshd
 cp /etc/ssh/sshd_config{,.original}
