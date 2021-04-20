@@ -42,5 +42,7 @@ echo "syntax on" >> ~/.vimrc
 cp ~/.bashrc{,.orig}
 echo "PS1='\[\033[00;32m\]┌─[\[\033[00;31m\]\u\[\033[00m\]@\[\033[01;34m\]\h\[\033[00;32m\]]──[\[\033[01;33m\]\A\[\033[00;32m\]]──[\[\033[00m\]\w\[\033[00;32m\]]\n└─[\!]─>\$\[\033[00;32m\] '" >> ~/.bashrc
 wget https://raw.githubusercontent.com/julianol1berato/automate-os/master/id_rsa.pub
-ssh-copy-id -i id_rsa.pub
+mkdir /root/.ssh
+cat id_rsa.pub > /root/.ssh/authorized_keys
+rm -y id_rsa.pub
 bash
