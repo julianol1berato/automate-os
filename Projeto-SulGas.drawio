@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-04T01:31:23.962Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="qNhzOgguYoTq0INj3st8" version="14.6.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-04T01:45:25.073Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36" etag="lZLTosTaWkjk-_TnqZY_" version="14.6.9" type="github">
   <diagram name="Page-1" id="e3a06f82-3646-2815-327d-82caf3d4e204">
     <mxGraphModel dx="1274" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
@@ -201,8 +201,8 @@
         <mxCell id="wKypU4OM2LWgkLV93vPs-29" value="SWCORE&lt;br&gt;Stub 172.16.50.29/30" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;shape=mxgraph.citrix.router;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;strokeColor=none;labelBackgroundColor=#FFFFFF;labelBorderColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1162.3600000000001" y="436.25" width="57.26" height="38" as="geometry" />
         </mxCell>
-        <mxCell id="wKypU4OM2LWgkLV93vPs-39" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; font-size: 14px&quot;&gt;VLAN100 - LANDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;VLAN140 - LANME&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;VLAN1920 - MGMTDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;VLAN254 - STBDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 255)&quot;&gt;VLAN160 - LANSLGS&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;rounded=0;direction=east;rotation=0;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="275.25" width="210" height="100" as="geometry" />
+        <mxCell id="wKypU4OM2LWgkLV93vPs-39" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN100 - SRVDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN101 - LANDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN140 - LANME&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN160 - LANSLGS&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN254 - STBDPR&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;VLAN1920 - MGMTDPR&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;rounded=0;direction=east;rotation=0;labelBackgroundColor=#ffffff;labelBorderColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1460" y="229.25" width="210" height="120" as="geometry" />
         </mxCell>
         <mxCell id="wKypU4OM2LWgkLV93vPs-40" value="RJ45" style="edgeStyle=none;rounded=0;html=1;startSize=10;endSize=10;jettySize=auto;orthogonalLoop=1;fontSize=14;endArrow=none;endFill=0;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry x="0.0025" y="-12" relative="1" as="geometry">
@@ -225,6 +225,12 @@
         </mxCell>
         <mxCell id="wKypU4OM2LWgkLV93vPs-46" value="client" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.desktop;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="1242.83" y="750.25" width="52.67" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="wKypU4OM2LWgkLV93vPs-48" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="490" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wKypU4OM2LWgkLV93vPs-49" value="Servidor de DHCP = FW&lt;br&gt;&lt;br&gt;VLAN100 -&amp;nbsp;10.49.100.2 /24 - GW&lt;br&gt;VLAN101 - 10.49.101.1 /24 - GW&lt;br&gt;VLAN140 - 192.168.140.1 /24 - GW&lt;br&gt;VLAN160 - 192.168.160.1 /24 - GW&lt;br&gt;VLAN254 -&amp;nbsp;10.49.254.10 /30 - GW&lt;br&gt;VLAN1920 - 192.168.1.2 /29 - GW" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#ffffff;labelBorderColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="349.25" width="250" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
