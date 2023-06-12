@@ -4,7 +4,7 @@
 
 ## if UPDATE 
 apt update && apt upgrade -y
-apt install wget curl vim atop htop nmap whowatch mtr htop rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo mpg123 sox make gcc g++ openssh-server libsox-fmt-base dialog unzip autoconf -y
+apt install wget curl vim atop htop nmap whowatch mtr rsync acl locate ethtool screen lshw hdparm ttyrec tcpdump auditd sudo mpg123 sox make gcc g++ openssh-server libsox-fmt-base dialog unzip autoconf -y
 
 
 
