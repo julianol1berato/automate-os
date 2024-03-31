@@ -1,0 +1,11 @@
+[Unit]
+Description=Run certbot twice daily
+
+[Timer]
+OnBootSec=300
+OnUnitActiveSec=1w
+OnCalendar=*-*-* 01:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
