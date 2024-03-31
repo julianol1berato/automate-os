@@ -14,7 +14,7 @@ Documentation=https://certbot.eff.org/docs
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/certbot -q renew --post-hook "systemctl restart nginx"
-PrivateTmp=true[/code]
+PrivateTmp=true
 ```
 
 ### Arquivo de configuração de tempo:
@@ -36,9 +36,9 @@ WantedBy=timers.target
 Para checar:
 `systemctl list-timers`
 
-systemctl enable certbot-renewal.timer
-systemctl status certbot-renewal.timer
+`systemctl enable certbot-renewal.timer`
+`systemctl status certbot-renewal.timer`
 
-journalctl -u certbot-renewal.service
+`journalctl -u certbot-renewal.service`
 
 
